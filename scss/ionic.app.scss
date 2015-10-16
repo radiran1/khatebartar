@@ -1,0 +1,28 @@
+// Include Sass mixins
+@import "scss/utils/mixins";
+
+// Include Theme variables
+@import "scss/common/theme.variables";
+// Include Ionic override variables
+@import "scss/utils/override_variables";
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Include Ionic override styles
+@import "scss/utils/override_styles";
+
+// Include project Sass variables
+@import "scss/common/common.variables";
+@import "scss/sidemenu/side-menu.variables";
+@import "scss/feed/feed.variables";
+
+// Include custom styles
+@import "scss/common/common.styles";
+
+@import "scss/sidemenu/side-menu.styles";
+
+@import "scss/feed/news.styles";
+@import "scss/feed/agencies.styles";
+@import "scss/feed/agancy-news.styles";
+@import "scss/feed/categories.styles";

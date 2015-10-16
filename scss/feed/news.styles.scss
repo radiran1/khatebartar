@@ -1,0 +1,9 @@
+.news-view
+{
+	background-color: $content-bg !important;
+	direction: rtl;
+	.iframe-wrapper iframe {
+   		width: 100% !important;
+   		height: 100%;
+ 	}
+}

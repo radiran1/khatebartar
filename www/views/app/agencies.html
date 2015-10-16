@@ -1,0 +1,45 @@
+<ion-view class="agencies-view">
+  <ion-nav-title>
+    <span> گروه {{categoryName}}</span>
+  </ion-nav-title>
+  <ion-content>
+    <ion-list class="agencies">
+      <a class="item item-icon-left" href="#/app/khatebartar-news/{{categoryId}}/1">
+        <div class="thumbnail-outer">
+          <pre-img ratio="_1_1" helper-class="">
+            <img class="thumbnail" ng-cache ng-src="img/ionic.png" spinner-on-load>
+          </pre-img>
+        </div>
+        <div>
+          <span class="title">آخرین عناوین {{categoryName}}</span>
+        </div>
+        <i class="icon ion-arrow-left-c"></i>
+      </a>
+      <a class="item item-icon-left" ui-sref="app.khatebartar-news({categoryId: categoryId, lasted:0})">
+        <div class="thumbnail-outer">
+          <pre-img ratio="_1_1" helper-class="">
+            <img class="thumbnail" ng-cache ng-src="img/ionic.png" spinner-on-load>
+          </pre-img>
+        </div>
+        <div>
+          <span class="title">اخبار برگزیده {{categoryName}}</span>
+        </div>
+        <i class="icon ion-arrow-left-c"></i>
+      </a>
+    </ion-list>
+    <div class="list agencies">
+      <a ng-repeat="agancy in agencies" class="item item-icon-left" ui-sref="app.agancy-news({categoryId: agancy.categoryId, siteId:agancy.id})">
+        <div class="thumbnail-outer">
+          <pre-img ratio="_1_1" helper-class="">
+            <img class="thumbnail" ng-cache ng-src="img/ionic.png" spinner-on-load>
+          </pre-img>
+        </div>
+        <div>
+          <span class="title">{{agancy.persianName}}</span>
+          <!--<p class="description">{{agancy.siteName}}</p>-->
+        </div>
+        <i class="icon ion-arrow-left-c"></i>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

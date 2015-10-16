@@ -1,0 +1,52 @@
+[
+	{
+		"id": "1",
+		"persianName": "سیاست",
+		"englishName": "politics"
+	},
+	{
+		"id": "2",
+		"persianName": "اقتصاد",
+		"englishName": "economy"
+	},
+	{
+		"id": "3",
+		"persianName": "ورزش",
+		"englishName": "sport"
+	},
+	{
+		"id": "4",
+		"persianName": "فرهنگ و هنر",
+		"englishName": "culture"
+	},
+	{
+		"id": "5",
+		"persianName": "دانش و فناوری اطلاعات",
+		"englishName": "technology"
+	},
+	{
+		"id": "6",
+		"persianName": "سلامت",
+		"englishName": "health"
+	},
+	{
+		"id": "7",
+		"persianName": "سرگرمی",
+		"englishName": "entertainment"
+	},
+	{
+		"id": "8",
+		"persianName": "چند رسانه ای",
+		"englishName": "multimedia"
+	},
+	{
+		"id": "9",
+		"persianName": "جامعه",
+		"englishName": "socity"
+	},
+	{
+		"id": "10",
+		"persianName": "اخبار جهان",
+		"englishName": "world news"
+	}
+]

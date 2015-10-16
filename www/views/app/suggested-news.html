@@ -1,0 +1,35 @@
+<ion-view cache-view="false" class="agancy-news-view">
+  <ion-nav-title>
+    <span>پیشنهاد خط برتر </span>
+  </ion-nav-title>
+  <ion-content>
+
+    <ion-refresher ng-if="newerCanBeLoaded()" pulling-text="بکشید و رها کنید..." on-refresh="loadNewerNews()">
+    </ion-refresher>
+
+    <div class="entries-list">
+      <div ng-show="news.length" ng-repeat="n in news" class="list card entry-item" ng-click="getNews(n.id)">
+        <div class="news-heading item item-text-wrap">
+          <h2 class="news-title" ng-bind-html="n.title | rawHtml"></h2>
+          <p class="news-date" ng-show="isShowDate">
+            تاریخ انتشار : <span>{{n.date}}</span>
+          </p>
+          <p class="news-date">
+            منبع : <span>{{n.site}}</span>
+          </p>
+        </div>
+        <div class="news-content item item-text-wrap">
+          <p class="news-excerpt" dynamic-anchor-fix ng-bind-html="n.abstract | rawHtml"></p>
+          <div class="news-actions row">
+            <div class="read-more col col-center" dynamic-anchor-fix>
+              <a class="button button-small button-block button-assertive" ui-sref="app.news({newsId: n.id})">
+                ادامه مطلب {{n.site}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadOlderNews()" distance="1%"></ion-infinite-scroll>
+  </ion-content>
+</ion-view>

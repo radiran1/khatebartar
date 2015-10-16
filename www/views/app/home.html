@@ -1,0 +1,85 @@
+<ion-view class="categories-view">
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span>دسته های خبری</span>
+  </ion-nav-title>
+  <ion-content>
+    <div class="row categories-list">
+      <div class="col col-50">
+        <a class="category" ui-sref="app.latest-news({suggested:'false'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/news.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title"> اخبار برگزیده</span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.suggested-news({suggested:'true'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/suggested-news.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">پیشنهاد خط برتر </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'1',categoryname:'سیاست'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/politics.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">سیاست </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'3',categoryname:'ورزش'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/sports.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">ورزش </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'5',categoryname:'دانش و فناوری اطلاعات'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/technology.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">دانش و فناوری اطلاعات </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'6',categoryname:'سلامت'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/health.png" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">سلامت </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'4',categoryname:'فرهنگ و هنر'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/entertainment.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">فرهنگ و هنر </span>
+        </a>
+      </div>
+      <div class="col col-50">
+        <a class="category" ui-sref="app.agencies({categoryId:'2',categoryname:'اقتصاد'})">
+          <pre-img ratio="_1_1" helper-class="square-image">
+            <img class="category-image" ng-cache ng-src="img/business.jpg" spinner-on-load>
+          </pre-img>
+          <div class="category-bg"></div>
+          <span class="category-title">اقتصاد </span>
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

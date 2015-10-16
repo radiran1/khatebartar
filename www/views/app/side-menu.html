@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar">
+      <ion-nav-back-button class="button-clear">
+        <i class="icon ion-chevron-left"></i><img ng-src="img/favicon32.png">
+      </ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" class="main-menu" expose-aside-when="large">
+    <ion-content>
+      <ion-list>
+        <ion-item class="heading-item item item-avatar" nav-clear menu-close ui-sref="app.home">
+          <h2 class="greeting">خط برتر</h2>
+          <p class="message">دیدبان خبری شما</p>
+          <div class="user-image-container">
+            <pre-img ratio="_1_1" helper-class="rounded-image">
+              <img class="user-image" ng-cache ng-src="img/ionic.png" spinner-on-load>
+            </pre-img>
+          </div>
+        </ion-item>
+        <ion-item class="item-icon-right" nav-clear menu-close ui-sref="app.newspaper">
+          <i class="icon ion-asterisk"></i>
+          <h2 class="menu-text">روزنامه های امروز</h2>
+        </ion-item>
+      </ion-list>
+      <ion-list ng-repeat="category in categories">
+        <ion-item class="item-icon-right" nav-clear menu-close ui-sref="app.agencies({categoryId:category.id,categoryname:category.persianName})">
+          <i class="icon ion-asterisk"></i>
+          <h2 class="menu-text">{{category.persianName}}</h2>
+        </ion-item>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

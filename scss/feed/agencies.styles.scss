@@ -1,0 +1,40 @@
+.agencies-view
+{
+	background-color: $content-bg !important;
+
+	.agencies
+	{
+		.item
+		{
+			padding-right: 60px;
+		}
+
+		.item .thumbnail-outer
+		{
+			position: absolute;
+			right : 10px;
+			width: 40px;
+
+			.thumbnail
+			{
+				width: 100%;
+			}
+		}
+		
+		.item.item-icon-left > div {
+  			direction: rtl;
+		}
+
+		.item .title
+		{
+			font-weight: 500;
+			font-size: 18px;
+		}
+
+		.item .description
+		{
+			color: lighten($content-color, 35%);
+		}
+	}
+}
+
